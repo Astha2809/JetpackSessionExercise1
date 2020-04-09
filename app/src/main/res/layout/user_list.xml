@@ -6,21 +6,33 @@
             name="user"
             type="com.example.jetpacksessionexercise1.User"/>
     </data>
+
     <LinearLayout
       android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="30dp">
+        android:padding="20dp"
+
+       >
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textview_name"
-            android:padding="20dp"
+           android:padding="10dp"
             android:background="#E4CBCB"
             android:text="@{user.name}">
-
         </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_email"
+            android:padding="10dp"
+            android:background="#E4CBCB"
+            android:text="@{user.email}"
+
+
+            />
 
     </LinearLayout>
 </layout>

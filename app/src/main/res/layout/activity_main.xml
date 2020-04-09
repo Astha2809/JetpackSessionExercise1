@@ -5,13 +5,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+    android:orientation="vertical"
     android:id="@+id/main_linear">
 
 
+
+
+
+
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp"
         android:id="@+id/recyclerview"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+        android:layout_gravity="bottom"
+        android:id="@+id/floatingbutton"
+        android:src="@drawable/ic_add_black_24dp"
+        android:background="#ff00">
+
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
 </LinearLayout>

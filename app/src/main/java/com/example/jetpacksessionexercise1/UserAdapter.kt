@@ -17,6 +17,7 @@ class UserAdapter(private val items: List<User>) : RecyclerView.Adapter<UserAdap
             R.layout.user_list,
             parent,
             false
+
         )
         return ViewHolder(binding)
 
