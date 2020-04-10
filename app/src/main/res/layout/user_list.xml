@@ -20,8 +20,9 @@
             android:layout_height="wrap_content"
             android:id="@+id/textview_name"
            android:padding="10dp"
+            android:textStyle="bold"
             android:background="#E4CBCB"
-            android:text="@{user.name}">
+            android:text="abcd">
         </TextView>
         <TextView
             android:layout_width="match_parent"
@@ -29,7 +30,7 @@
             android:id="@+id/textview_email"
             android:padding="10dp"
             android:background="#E4CBCB"
-            android:text="@{user.email}"
+            android:text="abc@gmail"
 
 
             />

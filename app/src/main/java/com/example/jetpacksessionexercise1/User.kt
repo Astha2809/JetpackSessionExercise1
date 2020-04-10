@@ -1,15 +1,21 @@
 package com.example.jetpacksessionexercise1
 
-  class User {
-      var name: String
-     var email: String
-//      var number: Int
+import android.telecom.Call
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+//data class UserInformation(val name:String,val email:String){
+//    @Entity(tableName = "word_table")
+//    class Word(@PrimaryKey @ColumnInfo(name = "word") val word: String)
+
+    @Entity(tableName = "user_info")
+    class User(@PrimaryKey //val id:String,
+               val name:String,
+               val email:String){
+
+    }
 
 
-     constructor(name: String,email:String)  {
-//      constructor(name:String){
-         this.name = name
-        this.email=email
-//         this.number=number
-     }
- }
+
+

@@ -7,8 +7,10 @@ import androidx.room.Query
 @Dao
 interface UserDao {
     @Query("SELECT * from user_info")
-    fun getAllUsers(): List<UserInformation>
+    fun getAllUsers(): List<User>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
      fun insertUser(user: User)
+   // fun insrt(userInformation: UserInformation
+
 }
